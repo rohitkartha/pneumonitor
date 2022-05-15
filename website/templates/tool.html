@@ -8,15 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=PT+Serif&family=Raleway&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-    <title>Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pneumonitor</title>
 </head>
 <body>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">How it works</a></li>
+      </ul>
+    
 
-<div id="inputField">
-    <input type="file" name="file_1" id="files">
+<div id="drop2">
+    <div id="drop1">
+
+        <div id="inputField">
+
+
+            <form id="buttonForm" action="#" method="post" enctype="multipart/form-data">
+
+                <label class="button" for="upload"><i class="fa fa-upload" style="font-size:18px"></i>
+                    Upload File</label>
+                <input type="file" name="file" id="upload" >
+
+                <button id="goBtn"><i class="fa fa-arrow-right"></i></button>
+
+ 
+            </form>
+            
+            <br></br>
+            <button id="buttonload">
+                <i class="fa fa-circle-o-notch fa-spin"></i>
+              </button>
+        </div>
+    </div>
 </div>
 
 
 
+<div id="responseField">
+    Test Results
+</div>
+
+
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
